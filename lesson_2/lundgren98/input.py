@@ -1,13 +1,13 @@
 
 
 def inputing():
-    s = input()
+    s = input('Type a string: ')
     print(s)
-    i = int(input())
+    i = int(input('Type an integer: '))
     print(i * 2)
-    s = input()
+    s = input('Type a string: ')
     print(s + s)
-    f = float(input())
+    f = float(input('Type a float: '))
     print(f / 3.5)
 
 
