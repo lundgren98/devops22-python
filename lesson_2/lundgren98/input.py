@@ -1,13 +1,19 @@
 
+def valuecatch(t, s):
+    while True:
+        try:
+            return t(input(s))
+        except ValueError:
+            print('Wrong Type!')
 
 def inputing():
     s = input('Type a string: ')
     print(s)
-    i = int(input('Type an integer: '))
+    i = valuecatch(int, 'Type an integer: ')
     print(i * 2)
     s = input('Type a string: ')
     print(s + s)
-    f = float(input('Type a float: '))
+    f = valuecatch(float, 'Type a float: ')
     print(f / 3.5)
 
 
