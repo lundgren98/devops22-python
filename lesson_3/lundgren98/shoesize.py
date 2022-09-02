@@ -17,12 +17,12 @@ people = [
         ]
 
 # Find the oldest person
-eldest = sorted(people, key=lambda person : person["age"])[-1]
+eldest = sorted(people, key=lambda person : int(person["age"]))[-1]
 # Find the median shoe sized person
-median_size = sorted(people, key=lambda person : person["size"])[1]
+median_size = sorted(people, key=lambda person : int(person["size"]))[1]
 
 print(f'The oldest person is {eldest["name"]} who has shoe size {eldest["size"]}')
-print(f'The person with median shoe size is {median_size["name"]} who is {eldest["age"]} years old')
+print(f'The person with median shoe size is {median_size["name"]} who is {median_size["age"]} years old')
 res = input('Please enter search value, name, age or size followed by value: ')
 com, val = res.split()
 
